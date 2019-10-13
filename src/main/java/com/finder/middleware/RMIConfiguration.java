@@ -25,10 +25,6 @@ public class RMIConfiguration {
 		final HessianServiceExporter hessianExpoter = new HessianServiceExporter();
 		hessianExpoter.setService(accountReadPlatformService);
 		hessianExpoter.setServiceInterface(AccountReadPlatformService.class);
-		/*
-		 * hessianExpoter.setInterceptors(Object);
-		 * hessianExpoter.setRemoteResolver(Object);
-		 */
 		return hessianExpoter;
 	}
 	
